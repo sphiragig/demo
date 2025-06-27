@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Stop Medical Services | Primary Care, Weight Management, Immigration Physicals</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles & Font Configuration -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; /* A very light gray for a clean background */
+        }
+        /* Custom class for scroll-in animation */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .reveal-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .hero-bg {
+             /* A real, professional background image */
+             background-image: linear-gradient(to right, rgba(239, 246, 255, 0.95), rgba(255, 255, 255, 0.85)), url('https://images.pexels.com/photos/3992933/pexels-photo-3992933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+             background-size: cover;
+             background-position: center;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-blue-700">1-Stop Medical</a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About Us</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                </nav>
+                
+                <!-- CTA Button -->
+                <a href="#contact" class="hidden md:inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition-all shadow">Book Appointment</a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <nav class="flex flex-col items-center space-y-4 p-4 border-t border-gray-200">
+                <a href="#home" class="text-gray-600 hover:text-blue-600 transition-colors">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About Us</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition-colors">Services</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+                <a href="#contact" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition-all w-full text-center">Book Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="pt-32 pb-20 hero-bg">
+            <div class="container mx-auto px-6 text-center md:text-left">
+                <div class="max-w-xl">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4 reveal-on-scroll">Compassionate Care for Your Entire Family</h1>
+                    <p class="text-lg text-gray-600 mb-8 reveal-on-scroll" style="transition-delay: 200ms;">Your trusted partner in health, offering comprehensive primary care, specialized weight management, and seamless immigration physicals.</p>
+                    <div class="reveal-on-scroll" style="transition-delay: 400ms;">
+                        <a href="#services" class="bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-700 transition-all shadow-lg text-lg">Explore Our Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2 reveal-on-scroll">
+                        <img src="https://images.pexels.com/photos/4226256/pexels-photo-4226256.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Welcoming clinic reception" class="rounded-lg shadow-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E0E7FF/3B82F6?text=Modern+Clinic';">
+                    </div>
+                    <div class="md:w-1/2 reveal-on-scroll" style="transition-delay: 200ms;">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Your Health, Our Priority</h2>
+                        <p class="text-gray-600 mb-4">At 1-Stop Medical, we believe in a patient-first approach. We are a dedicated team of healthcare professionals committed to providing personalized, high-quality medical care in a warm and welcoming environment. Our mission is to empower you to achieve your best health through every stage of life.</p>
+                        <p class="text-gray-600">From routine check-ups to specialized medical services, we are here to support you and your family with expertise you can trust.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal-on-scroll">
+                    <h2 class="text-3xl font-bold text-gray-800">Our Medical Services</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">We provide a wide range of services to meet your unique health needs. Explore our core specialties below.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1: Primary Health Care -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 reveal-on-scroll">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9 9 0 010-18 9 9 0 010 18zm-1-9h2m-6-3h10M5 12h2m10 0h2"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Primary Health Care</h3>
+                        <p class="text-gray-600">Comprehensive care for all ages, including preventative screenings, chronic disease management, and acute illness treatment.</p>
+                    </div>
+                    <!-- Service 2: Weight Management -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 reveal-on-scroll" style="transition-delay: 200ms;">
+                        <div class="flex justify-center mb-4">
+                             <svg class="w-16 h-16 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.645 20.91l-2.074-2.074a.5.5 0 01.707-.707l1.727 1.727 5.27-5.27a.5.5 0 01.707.707l-5.646 5.646a.5.5 0 01-.707 0zM12 2a10 10 0 100 20 10 10 0 000-20z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Weight Management</h3>
+                        <p class="text-gray-600">Personalized, physician-supervised programs to help you achieve and maintain a healthy weight for a better quality of life.</p>
+                    </div>
+                    <!-- Service 3: Immigration Physicals -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300 reveal-on-scroll" style="transition-delay: 400ms;">
+                        <div class="flex justify-center mb-4">
+                           <svg class="w-16 h-16 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Immigration Physicals</h3>
+                        <p class="text-gray-600">Authorized by USCIS to provide required medical examinations for immigration purposes, ensuring a smooth and efficient process.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-12 reveal-on-scroll">
+                    <h2 class="text-3xl font-bold text-gray-800">What Our Patients Say</h2>
+                 </div>
+                 <div class="max-w-3xl mx-auto text-center reveal-on-scroll">
+                    <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Patient photo" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/100x100/A5B4FC/FFFFFF?text=J.D.';">
+                    <blockquote class="text-xl text-gray-700 italic">
+                        "The care and attention I received at 1-Stop Medical were outstanding. The staff is incredibly friendly and professional. They made the entire immigration physical process stress-free. Highly recommended!"
+                    </blockquote>
+                    <p class="mt-4 font-semibold text-gray-800">- Jane D.</p>
+                    <p class="text-gray-500">Immigration Physical Patient</p>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Contact & Booking Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12 reveal-on-scroll">
+                    <h2 class="text-3xl font-bold text-gray-800">Book Your Appointment</h2>
+                    <p class="text-gray-600 mt-2">Ready to take the next step? Contact us today to schedule your visit.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div class="reveal-on-scroll">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Contact Information</h3>
+                        <div class="space-y-4 text-lg">
+                             <p class="flex items-center"><svg class="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg> 123 Health St, Medville, USA</p>
+                            <p class="flex items-center"><svg class="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg> (123) 456-7890</p>
+                            <p class="flex items-center"><svg class="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> contact@1stopmedical.com</p>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Opening Hours</h3>
+                        <div class="text-lg">
+                           <p><strong>Mon - Fri:</strong> 9:00 AM - 5:00 PM</p>
+                           <p><strong>Sat - Sun:</strong> Closed</p>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="reveal-on-scroll" style="transition-delay: 200ms;">
+                         <form action="#" method="POST" class="space-y-4">
+                            <div>
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" name="name" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Email" required>
+                            </div>
+                            <div>
+                                <label for="service" class="sr-only">Service</label>
+                                <select id="service" name="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-500" required>
+                                    <option value="">Select a service</option>
+                                    <option value="primary-care">Primary Health Care</option>
+                                    <option value="weight-management">Weight Management</option>
+                                    <option value="immigration-physical">Immigration Physical</option>
+                                </select>
+                            </div>
+                             <div>
+                                <label for="message" class="sr-only">Message</label>
+                                <textarea name="message" id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Message (Optional)"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition-all shadow-lg">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 1-Stop Medical Services. All Rights Reserved.</p>
+                <nav class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-blue-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-blue-400">Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Mobile Menu Toggle ---
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // --- Sticky Header on Scroll ---
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2', 'bg-white', 'shadow-md');
+                    header.classList.remove('py-4', 'bg-white/80');
+                } else {
+                    header.classList.add('py-4', 'bg-white/80');
+                    header.classList.remove('py-2', 'bg-white', 'shadow-md');
+                }
+            });
+
+            // --- Reveal on Scroll Animation ---
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.1 // 10% of the element is visible
+            });
+
+            const scrollElements = document.querySelectorAll('.reveal-on-scroll');
+            scrollElements.forEach(el => observer.observe(el));
+            
+            // --- Smooth Scroll for anchor links & close mobile menu on click ---
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+
+                    // Close mobile menu if it's open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                         mobileMenu.classList.add('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
